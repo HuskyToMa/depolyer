@@ -1,0 +1,22 @@
+{
+  "name": "mj-deploy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js",
+    "start": "pm2 start index.js --name='node_depoly_api'",
+    "stop": "pm2 stop node_depoly_api",
+    "delete": "pm2 delete node_depoly_api"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "pm2": "^4.2.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  }
+}
