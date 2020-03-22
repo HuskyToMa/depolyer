@@ -5,6 +5,8 @@ const fs = require('fs');
 const config = require('./config');
 const app = express();
 
+app.use(express.static(path.resolve(__dirname, './ui/dist')));
+
 const _spawn = (name, arr, options) => {
     const ls = spawn(name, arr, options);
     return new Promise((resolve, reject) => {
